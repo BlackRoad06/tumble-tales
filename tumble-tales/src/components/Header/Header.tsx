@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './assets/tumble-tales-logo.svg'
-import LoginPanel from './Login/LoginPanel'
+import logo from './assets/tumble-tales-logo.svg';
+import LoginPanel from './Login/LoginPanel';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,6 +9,7 @@ export default function Header() {
 
   return (
     <header className="h-64 bg-green-200 bg-opacity-30 px-6 relative">
+
       {/* Main container: nav and logo */}
       <div className="relative max-w-6xl w-full h-full mx-auto flex items-center justify-between">
         
@@ -19,11 +20,16 @@ export default function Header() {
           <Link to="/contact" className="text-blue-600 hover:underline whitespace-nowrap">Contact</Link>
         </nav>
 
+
         {/* Center logo */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        
+        <div className="logo-polish">
           <img src={logo} alt="Logo" className="h-40 sm:h-48 md:h-52 lg:h-56 xl:h-60 max-h-64 w-auto" />
+          </div>
         </div>
       </div>
+
 
       {/* Icons container — pinned top-right with padding */}
       <div className="absolute top-4 right-6 flex items-center space-x-4 z-50">
