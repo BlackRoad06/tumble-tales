@@ -1,18 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
 
 /*Import components here*/
-import Navbar from './components/Navbar'
+import Header from './components/Header/Header';
+
+import Body from './components/Body/Body';
 
 function App() {
   const [count, setCount] = useState(0)
 
 return (
   <div>
-    <Navbar /> {/* Set Navbar to take up full width */}
-    
+    <Header /> {/* Set Header to take up full width */}
+    <Body /> {/* Set Body to take up full width */}
+
     <div className="p-2">
 
       <div>
@@ -38,7 +41,12 @@ return (
       <p>Hellop</p>
       <h1 className="text-red-500">Vite + React</h1>
       <p>heleelel</p>
+      <button className="bg-red-500 hover:bg-red-400 active:bg-red-700 text-white px-6 py-2 rounded-md font-sans tracking-wider text-base transition duration-100">
+        Login
+      </button>
+
     </div>
+    
   </div>
 );
 
