@@ -1,0 +1,135 @@
+#root {
+  max-width: 100%;   /* or just remove max-width */
+  margin: 0;         /* no centering */   /* optional padding */
+  text-align: left;  /* or whatever you prefer */
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/*CSS styling for polished glass effect for Logo */
+.logo-polish {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.logo-polish::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.95),
+    transparent
+  );
+  transform: translate(-150%, 150%) rotate(-45deg);
+  animation: diagonal-shine-line 21s ease infinite;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes diagonal-shine-line {
+  0% {
+    transform: translate(-150%, 150%) rotate(-45deg);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(150%, -150%) rotate(-45deg);
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    transform: translate(150%, -150%) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+
+/* CSS for styling the login button */
+.login-button {
+  -webkit-transition-duration: 0.1s; /* Safari */
+  transition-duration: 0.1s;
+  background-color: #F4595B;
+  border-radius: 8px;
+  border-bottom: 4px solid #C24648;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 2px;
+}
+
+.login-button:hover {
+  background-color: #FF7375;
+  border: none;
+  border-radius: 8px;
+  border-bottom: 4px solid #C24648;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 2px;
+}
+
+.login-button:active {
+  background-color: #C24648;
+  border: none;
+  border-radius: 8px;
+  border-bottom: 4px solid #C24648;
+  color: #CCC;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: 2px;
+}
