@@ -1,4 +1,5 @@
-export default function LoginPanel({ isOpen, onClose }) {
+
+export default function LoginPanel({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   return (
     <div
       className={`fixed top-0 right-0 h-full w-72 bg-white shadow-md z-50 transform transition-transform duration-300 px-6 py-6 ${
