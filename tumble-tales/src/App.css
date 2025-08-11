@@ -1,7 +1,7 @@
 #root {
-  max-width: 100%;   /* or just remove max-width */
-  margin: 0;         /* no centering */   /* optional padding */
-  text-align: left;  /* or whatever you prefer */
+  max-width: 100%;  
+  margin: 0;         
+  text-align: left;  
 }
 
 
@@ -31,14 +31,6 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
 
 
@@ -87,7 +79,7 @@
 }
 
 
-/* Styling for the link-paintbrush class */
+/* Styling for the nav link-paintbrush class */
 .link-paintbrush {
   position: relative;
   display: inline-block;
@@ -125,3 +117,27 @@
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
+
+
+
+.login-btn .login-circle path {
+  fill: none;
+  stroke: black;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  animation: pulse-stroke 2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes pulse-stroke {
+  0%, 100% {
+    stroke-width: 2;
+    transform: scale(1);
+  }
+  50% {
+    stroke-width: 3;  /* Thicker for more emphasis */
+    transform: scale(1.05); /* Slight zoom for “flow” effect */
+  }
+}
