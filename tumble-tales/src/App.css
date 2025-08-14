@@ -117,8 +117,7 @@
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-
-
+/*Style for login button inside hamburger menu */
 
 .login-btn .login-circle path {
   fill: none;
@@ -141,3 +140,5 @@
     transform: scale(1.05); /* Slight zoom for “flow” effect */
   }
 }
+
+
