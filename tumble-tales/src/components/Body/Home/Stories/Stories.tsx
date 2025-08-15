@@ -42,11 +42,12 @@ export default function Stories() {
         className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"
       >
         {dummyStories.map((_, index) => (
-         <motion.div
+          <motion.div
   key={index}
   initial={{ opacity: 0 }}
   animate={visibleCards.includes(index) ? { opacity: 1 } : {}}
-  transition={{ duration: 0.5, ease: "easeInOut" }} // faster fade
+  transition={{ duration: 0.5, ease: "easeInOut" }}
+  className="transform transition-transform duration-150 ease-in-out hover:scale-110 active:scale-115 cursor-pointer"
 >
   <Story />
 </motion.div>
